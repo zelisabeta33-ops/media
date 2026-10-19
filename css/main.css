@@ -1,0 +1,24 @@
+main{
+    background-image: url(../images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 1240px;
+    padding: 40px 0 90px;
+}
+.gallery{
+    column-count: 3;
+    column-gap: 30px;
+}
+.card{
+    break-inside: avoid;
+    margin-bottom: 30px;
+    position: relative;
+    background-color: white;
+    box-sizing: border-box;
+    padding: 10px;
+}
+.card img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
