@@ -1,7 +1,4 @@
 main{
-    background-image: url(../images/bg.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
     min-height: 1240px;
     padding: 40px 0 90px;
 }
@@ -9,7 +6,6 @@ main{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
-
 }
 .card{
     position: relative;
@@ -66,7 +62,7 @@ main{
     font-size: 22px;
     font-weight: bold;
     margin-bottom: 10px;
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.1s ease-in-out;
 }
 .card-overlay .icon:hover{
     transform: scale(1.2);

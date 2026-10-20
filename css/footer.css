@@ -1,0 +1,41 @@
+footer{
+    background-image: url(../images/overlay.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 144px;
+    padding: 38px 0 20px;
+}
+.social-icons{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.social-icons a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 34px;
+    height: 34px;
+    border: 1px solid #777;
+    color: white;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+.social-icons a:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: white;
+    transform: scale(1.1);
+}
+.copyright{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    margin-top: 37px;
+}
+.copyright p{
+    font-size: 11px;
+}
+.copyright .color-grey{
+    color: #cccccc;
+}
