@@ -6,19 +6,81 @@ main{
     padding: 40px 0 90px;
 }
 .gallery{
-    column-count: 3;
-    column-gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+
 }
 .card{
-    break-inside: avoid;
-    margin-bottom: 30px;
     position: relative;
     background-color: white;
     box-sizing: border-box;
     padding: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+}
+.card:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 0px 19px -2px #000000;
 }
 .card img{
     width: 100%;
-    height: auto;
-    display: block;
+    height: 90%;
+    object-fit: cover;
+}
+.card-title{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    left: 10px;
+    background-color: black;
+    color: white;
+    height: 40px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+}
+.card-overlay{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    background-color: #0d0d0de7;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+.card-overlay:hover{
+    opacity: 1;
+}
+.card-overlay .icon{
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+.card-overlay .icon:hover{
+    transform: scale(1.2);
+}
+.card-overlay .date{
+    font-size: 14px;
+    color: #aaaaaa;
+    margin-bottom: 20px;
+}
+.card-overlay h3{
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+.card-overlay p{
+    font-size: 15px;
+    color: #cccccc;
 }
