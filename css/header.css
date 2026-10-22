@@ -49,10 +49,20 @@ nav{
     margin-bottom: 30px;
 }
 .highlight{
-    color: #4ba3e3;
+    background: linear-gradient(90deg, #4ba3e3, #8cc63f, #4ba3e3);
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient 4s linear infinite;
 }
-.highlight-green{
-    color: #8cc63f;
+@keyframes gradient{
+    0%{
+        background-position: 0% 50%;
+    }
+    100%{
+        background-position: 200% 50%;
+    }
 }
 .header-content p{
     font-size: 13px;
